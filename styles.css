@@ -1,0 +1,78 @@
+:root {
+    /*colours*/
+    --baby-blue: #89cff0;
+    --pewter: #e2e4e1;
+    --blue-grotto: #3c749c;
+    --tan: #775537;
+    --white: white;
+}
+
+body {
+    background-color: var(--blue-grotto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    font-family: helvetica;
+}
+
+div {
+    max-width: 480px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main>h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+}
+
+#explanation {
+    background-color: var(--baby-blue);
+    color: var(--white);
+}
+
+#input-div,
+#result {
+    background-color: var(--pewter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-div>span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#text-input {
+    width: 80%;
+    margin-right: 10px;
+    background-color: var(--pewter);
+    border: none;
+    border-bottom: 2px solid var(--tan);
+    text-align: center;
+}
+
+#check-btn {
+    background-color: var(--tan);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+#check-btn:hover {
+    cursor: pointer;
+}
+
+#result {
+    display: none;
+}
